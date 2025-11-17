@@ -1,0 +1,25 @@
+# Core dependencies
+click>=8.0.0
+pyyaml>=6.0
+pillow>=9.0.0
+numpy>=1.21.0
+requests>=2.28.0
+tqdm>=4.64.0
+jinja2>=3.1.0
+
+# AI Texture Generation
+diffusers>=0.21.0
+transformers>=4.30.0
+accelerate>=0.20.0
+torch>=2.0.0
+safetensors>=0.3.0
+
+# Optional: For local Stable Diffusion
+# xformers>=0.0.20
+
+# Asset packaging
+zipfile36>=0.1.3
+
+# Logging and monitoring
+colorama>=0.4.6
+rich>=12.0.0
