@@ -1,0 +1,71 @@
+name: "250 Industrial Metal Barrels"
+description: "Industrial metal barrels and drums in various colors and conditions. Features realistic dents, rust, and paint variations. Ideal for industrial settings, post-apocalyptic scenes, and warehouse environments."
+version: "1.0.0"
+author: "Asset Pack Bot"
+tags:
+  - barrel
+  - drum
+  - industrial
+  - metal
+  - container
+  - warehouse
+  - realistic
+
+asset_count: 250
+asset_name_pattern: "metal_barrel_{index:04d}"
+
+enable_variations: true
+variation_seed_start: 200
+
+export_formats:
+  - fbx
+  - obj
+
+generate_thumbnails: true
+thumbnail_size: [256, 256]
+
+mesh:
+  base_shape: "cylinder"
+  size_x: [0.9, 1.1]
+  size_y: [1.2, 1.6]
+  size_z: [0.9, 1.1]
+  subdivisions: 1
+  use_smooth_shading: true
+  noise_strength: 0.02
+  noise_scale: 1.0
+  edge_wear: 0.15
+  add_details: true
+  detail_density: 0.4
+  detail_types:
+    - panels
+    - bolts
+  add_cracks: false
+  crack_density: 0.0
+  add_dents: true
+  dent_count: [0, 12]
+  style: "realistic"
+
+texture:
+  material_type: "metal"
+  style_keywords:
+    - industrial
+    - rusty
+    - painted metal
+    - worn
+  color_palette:
+    - red
+    - blue
+    - yellow
+    - green
+  weathering: 0.5
+  dirt_amount: 0.35
+  scratch_amount: 0.55
+  generate_albedo: true
+  generate_normal: true
+  generate_roughness: true
+  generate_metallic: true
+  generate_ao: true
+  generate_emission: false
+  texture_resolution: 1024
+  seamless: true
+  custom_prompt: null

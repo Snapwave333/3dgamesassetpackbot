@@ -1,0 +1,72 @@
+name: "1000 Stylized Sci-Fi Crates Pack"
+description: "A massive collection of unique sci-fi cargo crates and containers. Each crate features procedurally generated geometry with panels, bolts, and vents, combined with AI-generated metallic textures. Perfect for space stations, cargo bays, and futuristic warehouses."
+version: "1.0.0"
+author: "Asset Pack Bot"
+tags:
+  - sci-fi
+  - crate
+  - container
+  - futuristic
+  - space
+  - cargo
+  - stylized
+
+asset_count: 1000
+asset_name_pattern: "scifi_crate_{index:04d}"
+
+enable_variations: true
+variation_seed_start: 42
+
+export_formats:
+  - fbx
+  - obj
+
+generate_thumbnails: true
+thumbnail_size: [256, 256]
+
+mesh:
+  base_shape: "cube"
+  size_x: [0.8, 1.4]
+  size_y: [0.8, 1.2]
+  size_z: [0.8, 1.4]
+  subdivisions: 2
+  use_smooth_shading: false
+  noise_strength: 0.05
+  noise_scale: 1.0
+  edge_wear: 0.3
+  add_details: true
+  detail_density: 0.6
+  detail_types:
+    - panels
+    - bolts
+    - vents
+  add_cracks: false
+  crack_density: 0.1
+  add_dents: true
+  dent_count: [0, 3]
+  style: "stylized"
+
+texture:
+  material_type: "metal"
+  style_keywords:
+    - sci-fi
+    - futuristic
+    - space station
+    - cargo container
+    - industrial
+  color_palette:
+    - gray
+    - blue
+    - orange
+  weathering: 0.35
+  dirt_amount: 0.25
+  scratch_amount: 0.4
+  generate_albedo: true
+  generate_normal: true
+  generate_roughness: true
+  generate_metallic: true
+  generate_ao: true
+  generate_emission: true
+  texture_resolution: 1024
+  seamless: true
+  custom_prompt: null

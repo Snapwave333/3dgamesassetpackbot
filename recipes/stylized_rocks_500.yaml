@@ -1,0 +1,68 @@
+name: "500 Stylized Rocks and Boulders"
+description: "A diverse collection of stylized rocks, boulders, and stone formations. Each rock features unique procedural deformations and cracks, with natural-looking stone textures. Perfect for fantasy environments, platformers, and stylized game worlds."
+version: "1.0.0"
+author: "Asset Pack Bot"
+tags:
+  - rock
+  - stone
+  - boulder
+  - nature
+  - stylized
+  - environment
+  - fantasy
+
+asset_count: 500
+asset_name_pattern: "stylized_rock_{index:04d}"
+
+enable_variations: true
+variation_seed_start: 100
+
+export_formats:
+  - fbx
+  - obj
+
+generate_thumbnails: true
+thumbnail_size: [256, 256]
+
+mesh:
+  base_shape: "sphere"
+  size_x: [0.6, 1.8]
+  size_y: [0.5, 1.5]
+  size_z: [0.6, 1.8]
+  subdivisions: 3
+  use_smooth_shading: false
+  noise_strength: 0.35
+  noise_scale: 2.0
+  edge_wear: 0.1
+  add_details: false
+  detail_density: 0.0
+  detail_types: []
+  add_cracks: true
+  crack_density: 0.4
+  add_dents: true
+  dent_count: [2, 8]
+  style: "stylized"
+
+texture:
+  material_type: "stone"
+  style_keywords:
+    - rock
+    - natural
+    - rough
+    - granite
+    - stylized
+  color_palette:
+    - gray
+    - brown
+  weathering: 0.5
+  dirt_amount: 0.4
+  scratch_amount: 0.2
+  generate_albedo: true
+  generate_normal: true
+  generate_roughness: true
+  generate_metallic: false
+  generate_ao: true
+  generate_emission: false
+  texture_resolution: 1024
+  seamless: true
+  custom_prompt: null

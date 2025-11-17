@@ -1,0 +1,42 @@
+output_dir: "./output"
+recipes_dir: "./recipes"
+temp_dir: "./temp"
+blender_scripts_dir: "./blender_scripts"
+
+blender:
+  executable_path: "blender"
+  python_executable: ""
+  render_samples: 128
+  use_gpu: true
+  gpu_device: "CUDA"
+
+texture:
+  model_id: "stabilityai/stable-diffusion-2-1"
+  use_local: true
+  api_key: null
+  api_url: null
+  resolution: 1024
+  guidance_scale: 7.5
+  num_inference_steps: 50
+  negative_prompt: "blurry, low quality, distorted, text, watermark, artifacts"
+  seamless: true
+
+lod:
+  generate_lods: true
+  lod_levels: [1.0, 0.5, 0.25, 0.1]
+  lod_distances: [0, 10, 20, 50]
+
+packaging:
+  include_prefabs: true
+  include_materials: true
+  include_textures: true
+  include_meshes: true
+  compression: "lz4"
+  unity_version: "2021.3"
+
+batch_size: 10
+max_workers: 4
+random_seed: null
+
+log_level: "INFO"
+log_file: null
